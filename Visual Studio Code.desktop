@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Visual Studio Code
+Comment=Microsoft's Open Source Text Editor for Developers
+Exec=/home/ice/.local/bin/code
+Icon=/home/ice/.local/programs/VSCode-linux-x64/resources/app/resources/linux/code.png
+Path=
+Terminal=false
+StartupNotify=false
