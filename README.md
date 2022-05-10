@@ -39,6 +39,6 @@ Place above line in your shell's rc file so that you are able to execute
 `code` without specifying the full path everytime in the terminal.
 
 
-*Cheers,
+*Cheers,*
 
-Happy Hacking!*
+*Happy Hacking!*
