@@ -7,3 +7,4 @@ Relevant desktop entries have been provided for each package in-case that the us
 ## Package List
 
 - Visual Studio Code
+- Fsync
