@@ -28,32 +28,32 @@ int main(int argc, char* argv[])
 
     /* check if argument file exists and we required permissions */
     if (access(argv[1], F_OK) != 0) {
-        printf("fsync: error: %s: No file or directory\n", argv[1]);
+        printf(RED "fsync: error: %s: No file or directory\n" RESET, argv[1]);
         return 1;
     }
     if (access(argv[1], W_OK | R_OK)) {
-        printf("fsync: error: %s: No permission to operate on file\n", argv[1]);
+        printf(RED "fsync: error: %s: No permission to operate on file\n" RESET, argv[1]);
         return 1;
     }
 
     /* open a file stream to argument */
     FILE* fp = fopen(argv[1], "a+");
     if (fp == NULL) {
-        printf("fsync: error: %s: Unable to open file - %s\n", argv[1], strerror(errno));
+        printf(RED "fsync: error: %s: Unable to open file - %s\n" RESET, argv[1], strerror(errno));
         return 1;
     }
 
     /* get a file descriptor to argument file stream*/
     int fd = fileno(fp);
     if (fd == -1) {
-        printf("fsync: error: %s: file stream is not associated with an actual file\n", argv[1]);
+        printf(RED "fsync: error: %s: file stream is not associated with an actual file\n" RESET, argv[1]);
         return 1;
     }
 
     /* finally perform the syscall */
     int rt = fsync(fd);
     if (rt == -1) {
-        printf("fsync: error: call to fsync - %s\n", strerror(errno));
+        printf(RED "fsync: error: call to fsync - %s\n" RESET, strerror(errno));
         return 1;
     }
     return 0;
