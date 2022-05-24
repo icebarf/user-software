@@ -23,4 +23,4 @@ install:
 	mv $(BIN) $(DESTDIR)/$(BIN)
 
 clean:
-	rm -f $(DESTDIR)/$(BIN) $(DEP) $(OBJ)
+	rm -f $(DEP) $(OBJ)
