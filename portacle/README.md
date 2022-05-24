@@ -20,3 +20,11 @@ It will setup necessary symlinks for running of this program and export an envir
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
+## Uninstall
+
+There also exists an `uninstall.sh` script that will clean/uninstall the portacle installation from your user's local directory. Run it as follows.
+
+```sh
+$ sh -c ./uninstall.sh
+```
+
