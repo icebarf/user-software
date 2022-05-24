@@ -46,3 +46,16 @@ $ sh -c ./uninstall.sh
 ## Return Values
 
 The binary returns `0` on success otherwise `1` on failure along with an error description.
+
+
+## Licensing Note
+
+Please note that the `fsync` program here in this repository is distributed
+under a different license than the parent Repository.
+
+The parent repository license is not applicable to this folder and you must
+agree to the licensing contents of `LICENSE` and the first few lines of 
+`fsync.c` which term the license.
+
+> The license also applies to all previous commits on this repository and must
+be used under the terms of the LICENSE Specified.
