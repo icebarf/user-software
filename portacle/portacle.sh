@@ -30,3 +30,6 @@ ln -s $USRPROG/portacle/portacle.run $USRBIN/portacle
 ln -s $USRPROG/portacle/portacle.desktop $USRAPPS/portacle.desktop
 
 printf "\n\e[1m\e[32mInstall Successful!!\e[m\n"
+
+
+export PATH=$HOME/.local/bin:$PATH
