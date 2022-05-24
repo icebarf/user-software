@@ -11,7 +11,7 @@ OBJ = fsync.o
 DEP = $(OBJ:.o=.d)
 -include $(DEP)
 
-all: $(BIN) install
+all: $(BIN)
 
 .c.o:
 	$(CC) $(CFLAGS) -MD -c $< -o $@
