@@ -1,7 +1,7 @@
 .TH FSYNC 1
 
 .SH NAME
-fsync \- perform the fsync(2/3) syscall on a file
+fsync \- perform the fsync syscall on a file
 
 .SH SYNOPSIS
 .B fsync
@@ -9,7 +9,7 @@ fsync \- perform the fsync(2/3) syscall on a file
 
 .SH DESCRIPTION
 .B fsync
-performs the syscall fsync as specified in the POSIX standard on a file.
+performs the fsync syscall as specified in the POSIX standard on a file.
 
 .SH OPTIONS
 .B file
@@ -19,6 +19,7 @@ performs the syscall fsync as specified in the POSIX standard on a file.
 
 .SH RETURN VALUE
 The program returns 0 on success.
+
 Otherwise returns 1 on failure.
 
 .SH EXAMPLES
@@ -26,7 +27,7 @@ Otherwise returns 1 on failure.
 To make sure a file is completely copied to destination and all changes
 are synced.
 
-.BR fsync (1)
+.BR Example
 command:
 .PP
 .nf
@@ -35,3 +36,16 @@ fsync /mnt/files/mycopiedfile.mp3
 .RE
 .fi
 .PP
+
+.SH SEE ALSO
+
+.BR fsync (2) 
+.RS 4
+.I Linux Programmer\'s Manual
+.RE
+
+.BR fsync (3)
+.RS 4
+.I POSIX Programmer\'s Manual
+.RE
+
