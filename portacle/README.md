@@ -1,6 +1,6 @@
 # Portacle
 
-Portacle is preconfigured IDE for Lisp programming. It ships with Emacs, sbcl and quicklisp.
+Portacle is preconfigured IDE for Common Lisp programming. It ships with Emacs, sbcl and quicklisp.
 
 It also installs magit, company and slime emacs packages.
 
