@@ -3,9 +3,14 @@
 #include <string.h>
 #include <unistd.h>
 
+#define RESET "\033[m"
+#define GREEN "\033[32m"
+#define RED   "\033[31m"
+#define BLUE "\033[34m"
+
 void print_help(void)
 {
-    printf("%s%s", "fsync: synchronize changes to a file\n", "Usage:\n\tfsync [FILE]\n");
+    printf(BLUE "fsync: synchronize changes to a file\n" RESET GREEN "Usage:\n\tfsync [FILE]\n" RESET);
 }
 
 int main(int argc, char* argv[])
