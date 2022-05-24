@@ -20,6 +20,22 @@ $ fsync FILENAME
 $ fsync
 ```
 
+## Installation
+
+The fsync program can be built and installed in the local user's directory with the help of `install.sh` script that is provided with this code.
+
+```sh
+$ sh -c ./install.sh
+```
+
+## Uninstall
+
+The fsync program can be installed with the uninstall script that is provided with this code.
+
+```sh
+$ sh -c ./uninstall.sh
+```
+
 ## Return Values
 
 The binary returns `0` on success otherwise `1` on failure along with an error description.
