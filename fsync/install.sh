@@ -2,4 +2,13 @@
 
 make all
 make install
-printf "\e[32m Installed fsync in your local directory\n\e[m"
+
+sudo cp man/fsync.1 /usr/share/man/man1/fsync.1
+
+if command -v gzip; then
+    sudo gzip /usr/share/man/man1/fsync.1
+else
+    printf "command: gzip not found\n"
+fi
+
+printf "\e[32mInstalled fsync !!\n\e[m"
