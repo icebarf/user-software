@@ -1,7 +1,6 @@
 #!/bin/bash
 
-URL="https://az764295.vo.msecnd.net/stable/57fd6d0195bb9b9d1b49f6da5db789060795de47/code-stable-x64-1651667500.tar.gz"
-
+URL="https://az764295.vo.msecnd.net/stable/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/code-stable-x64-1652813090.tar.gz"
 
 if [[ ${#1} > 0 ]]; then
 	DESTDIR=$1
